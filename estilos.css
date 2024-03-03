@@ -1,0 +1,615 @@
+body {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    position: relative;
+    height: 100%;
+    background-image: url(img/Recurso1.png);
+    background-size: cover;
+   
+  }
+  
+  .concert-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #0bd867;
+    padding: 20px;
+    
+  }
+  .menu-icon, .search-icon {
+    order: -1;  /* Cambia el orden de estos elementos en el diseño */
+  }
+  
+  .left-side, .center-image, .right-side {
+    flex: 1;
+  }
+  
+  .left-side {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .left-side h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #22ad3e; /* Color verde */
+}
+  
+  .left-side p {
+    margin-bottom: 20px;
+  }
+  
+  .button-primary {
+    background-color: #4bd867;
+    color: black;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+  
+  .button-secondary {
+    background-color: black;
+    color: #4bd867;
+    border: 2px solid #4bd867;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+  
+  .center-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  .right-side {
+    text-align: left;
+  }
+  
+  .event-dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las tarjetas */
+  }
+  
+  .event-date {
+    flex: 0 0 calc(50% - 10px);
+    padding: 20px;
+    border-radius: 10px;
+   
+  }
+  .event-date p {
+    margin: 0;
+    font-size: 16px;
+    color: #fff; 
+    color: #4bd867;
+  }
+  
+  .right-side img {
+    margin-top: 20px;
+    width: 100px;
+  }
+  
+  /* Ajusta los márgenes para separar Shape y fechas de la imagen */
+  .right-side img,
+  .event-date {
+    margin-left: 10px;  /* Puedes ajustar este valor según tu preferencia */
+  }
+  
+  .background-seccion1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4bd867;
+  
+    padding: 30px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .tourDetails {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .topLine {
+    border-top: 1px solid black;
+    width: 100%;
+    top: 0;
+    width: 50%; 
+    height: 20%; 
+    transform: rotate(30deg); 
+    /* transform-origin: left center; */ /* Establece el origen de la rotación */
+  }
+  
+  .downLine {
+    display: flex;
+    align-items:end;
+    border-top: 1px solid black;
+    width: 100%;
+    width: 50%; 
+    height: 20%; 
+    transform: rotate(30deg); 
+    
+  }
+  
+  .verticalLine {
+    display: flex;
+    border-top: 1px solid black;
+    width: 100%;
+    bottom: 0;
+    margin-left: 10%;
+    margin-bottom: 18%;
+    width: 30%; 
+    height: 20%; 
+    transform: rotate(90deg); 
+    
+  }
+  
+  .tourDetails .formated {
+    text-align: justify;
+  }
+  
+  .image-container {
+    float: left;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .schedule-container {
+    clear: both;
+    text-align: left;
+  }
+  
+  .schedule-text h1,
+  .schedule-text p {
+    margin: 0;
+  }
+  
+  .schedule-text {
+    font-size: 14px;
+  }
+  
+  .schedule-text h1,
+  .schedule-text p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .image-container img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .background-seccion2 {
+    position: relative;
+    text-align: center;
+  }
+  
+  .stars-container {
+    position: relative;
+  }
+  
+  .estrella1,
+  .estrella2 {
+    position: absolute;
+    top: 0;
+    width: px; /* Ajusta el tamaño según tus preferencias */
+    height: 50px; /* Ajusta el tamaño según tus preferencias */
+  }
+  
+  .estrella1 {
+    left: 0;
+  }
+  
+  .estrella2 {
+    right: 0;
+  }
+  
+  .estrella1 img,
+  .estrella2 img {
+    width: 50%; /* Ajusta el tamaño según tus preferencias */
+    height: 50%; /* Ajusta el tamaño según tus preferencias */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-content {
+    position: relative;
+  }
+  
+  .star-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .green-title {
+    color: green;
+  }
+  
+  .green-text {
+    color: #4bd867;
+  }
+  
+  .date-text {
+    color: #4bd867;
+  }
+  
+  /* Estilos para las cards */
+  .column {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color:#4bd867 ; /* Espaciado entre las imágenes y el texto superior */
+  }
+  
+  .card {
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .background-seccion3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4bd867;
+    padding: 30px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    
+  }
+  
+ 
+  .h1{
+    color: #000000; /* Color negro para el texto */
+  }
+
+  button.buy-tickets-btn {
+    background-color: #000000; /* Color para el botón "BUY TICKETS" */
+    color: #ffffff; /* Color del texto */
+    border-radius: 15px;
+    margin-right: 10px; /* Margen a la derecha para separar los botones */
+}
+
+button.learn-more-btn {
+    background-color: #4bd867; /* Color para el botón "LEARN MORE" */
+    color: #000000; /* Color del texto */
+    border-radius: 15px;
+    border: 1px solid #000000; /* Borde para el botón "LEARN MORE" */
+    margin-right: 10px; /* Margen a la derecha para separar los botones */
+}
+  
+  .background-seccion4 {
+      position: relative;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  /* Estilos para las estrellas */
+  .star-left,
+  .star-right {
+      position: absolute;
+      top: 10px;
+  }
+  
+  .star-left {
+      left: 10px;
+  }
+  
+  .star-right {
+      right: 10px;
+  }
+  
+  /* Estilos para el título */
+  .section-title {
+      margin-bottom: 20px;
+  }
+  
+  .section-title h1 {
+      font-size: 2em;
+      color: #4bd867; /* Cambié el color a verde, ajusta según tus preferencias */
+  }
+  
+  /* Estilos para el contenido de los artistas */
+  .artist-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      text-align: left;
+  }
+  
+  .Artist-1,
+  .Artist-2,
+  .Artist-3,
+  .Artist-4 {
+      padding: 20px;
+      margin: 0 10px;
+      width: 250px;
+      text-align: left;
+      margin-bottom: 20px;
+  }
+  
+  .Artist-1 img,
+  .Artist-2 img,
+  .Artist-3 img,
+  .Artist-4 img {
+      width: 120%;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+  }
+  
+  .Artist-1 h1,
+  .Artist-2 h1,
+  .Artist-3 h1,
+  .Artist-4 h1,
+  .Artist-1 p,
+  .Artist-2 p,
+  .Artist-3 p,
+  .Artist-4 p {
+      color: #0bd867;
+      font-size: inherit;
+      text-align: left;
+      margin: 5px 0;
+  }
+  
+  h1, p {
+      margin: 5px 0;
+      text-align: center;
+  }
+  
+  
+  .background-seccion5 {
+    background-color: #4bd867;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-seccion5::before,
+  .background-seccion5::after {
+    content: '';
+    position: absolute;
+    background-color: black; /* Puedes cambiar el color según tus preferencias */
+    height: 2px; /* Grosor de la línea */
+    width: 12%; /* Ancho de la línea */
+  }
+  
+  .background-seccion5::before {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-45deg);
+    transform-origin: 0% 100%;
+  }
+  
+  .background-seccion5::after {
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 0%;
+  }
+  
+  /* Estilos adicionales para el contenido */
+  .content {
+    padding: 20px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px; /* Ajusta el espacio entre el contenido y las cards */
+  }
+  
+  .cards div {
+    flex: 1;
+    
+    padding: 15px;
+  }
+  
+  /* Estilos para los botones */
+  .cards button {
+    background-color: #000000; /* Color de fondo del botón, puedes cambiarlo */
+    color: #4bd867; /* Color del texto del botón */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  /* Agrega estos estilos para los títulos y párrafos dentro de .content */
+  .content h1 {
+    color: #000;
+    font-family: "Roboto", sans-serif
+  }
+  
+  .content p {
+    font-size: 1.8em; /* Tamaño de fuente más grande para "OUR SHOWS" */
+    color: #000000; /* Color verde para el texto */
+  }
+  
+  .background-seccion6 {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .background-seccion6 h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .background-seccion6 br {
+    font-size: 1em;
+  }
+  
+  .background-seccion6 {
+    text-align: center; /* Centra el contenido dentro de background-seccion6 */
+    color: #ffffff;
+  }
+  
+  .background-seccion6 h1 {
+    font-size: 2em; /* Ajusta el tamaño del título según sea necesario */
+    margin-bottom: 10px; /* Ajusta el espacio entre el título y el párrafo */
+    color: #000000;
+  }
+  .background-seccion6 br{
+    font-size: 1em
+  }
+  
+  .background-seccion6 p {
+    font-size: 0.8em; /* Ajusta el tamaño del párrafo según sea necesario */
+    margin: 0; /* Elimina el margen predeterminado para evitar espacios innecesarios */
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+  }
+  
+  .card {
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 0 45%; /* Distribuye el espacio disponible con un máximo de dos tarjetas por fila */
+    max-width: 300px;
+  
+  }
+  
+  .card img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: -0; /* Ajusta el espacio entre la imagen y la caja */
+  
+  
+    
+  }
+  
+  .caja {
+    margin-top: 0; /* Sin margen superior para que esté totalmente pegado a la imagen */
+    background-color: #4bd867; /* Agrega un color de fondo a las cajas */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos horizontalmente */
+    margin-bottom: 0px;
+   
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px; /* Ajusta el espacio entre el título y el párrafo */
+    color: white; /* Cambia el color del texto a blanco */
+  }
+  
+  p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: white; /* Cambia el color del texto a blanco */
+  }
+  
+  button {
+    background-color: #000;
+    color: #4bd867;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  /* CSS del footer */
+  
+  footer {
+    background-color: #4bd867;
+    color: #000000;
+    padding: 10px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #000000;
+  }
+  
+  .secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .seccion {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .seccion h3 {
+    margin-top: 0;
+  }
+  
+  .seccion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .seccion ul li {
+    margin: 5px 0;
+  }
+  
+  .seccion ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 8px;
+  
+    
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    margin: 20px;
+    padding: 15px;
+    color: #000;
+  }
+  
+  /* Alineación ligeramente a la izquierda para el texto de derechos de autor */
+  .copyright p:last-child {
+    text-align: left;
+    margin-left: 112px; /* Ajusta según sea necesario */
+  }
+  
