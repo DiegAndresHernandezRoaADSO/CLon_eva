@@ -24,7 +24,41 @@
             <img src="img/Image.png" alt="Concert Image">
         </div>
         <div class="right-side">
-            <img src="Shape-3.png"> <img src="Shape-4.png" alt="">
+          <div class="contenedor_buscar">
+                <input type="text" class="input_buscar">
+                <span><img src="img/Search.png" style="width: 15px;" alt=""></span>
+            </div>
+            <div style="display: flex;    justify-content: space-around;">
+                <div>
+                  <div><button class="boton_concierto"></button></div>
+                  <div><h3 class="hora_concierto" >08.12</h3></div>
+                  <div><p class="parrafo_concierto">The Black Punk Rock Of East Island</p></div>
+
+                </div>
+                <div>
+                  <div><button class="boton_concierto"></button></div>
+                  <div><h3 class="hora_concierto">09.15</h3></div>
+                  <div><p class="parrafo_concierto">The Black Punk Rock Of East Island</p></div>
+                </div>
+            </div>
+            <div style="display: flex;    justify-content: space-around;">
+              <div>
+                
+                <div><h3 class="hora_concierto">10.12</h3></div>
+                <div><p class="parrafo_concierto" class="parrafo_concierto">The Black Punk Rock Of East Island</p></div>
+                <div><button class="boton_concierto"></button></div>
+              </div>
+              <div>
+                
+                <div><h3 class="hora_concierto" >10.28</h3></div>
+                <div><p class="parrafo_concierto">The Black Punk Rock Of East Island</p></div>
+                <div><button class="boton_concierto"></button></div>
+              </div>
+            </div>
+          
+          
+          
+          <!-- <img src="Shape-3.png"> <img src="Shape-4.png" alt="">
           <div class="event-date">
             <p>08.12 <br>The Black Punk Rock Of East Island<br></p>
           </div>
@@ -37,7 +71,7 @@
           <div class="event-date">
             <p>10.28 <p class="p-p">The Black Punk Rock Of East Islan</p></p>
            <img src="Shape-3.png"> <img src="Shape-4.png" alt="">
-          </div>
+          </div> -->
         </div>
         
     </div>
@@ -47,11 +81,11 @@
 <section class="background-seccion1">
   
 <div class="tourDetails">
-  <div>
+  <div style="width: 50%;">
 
     <div class="topLine"></div>
 
-    <h1>THE TOUR IN A NUTSHELL</h1>
+    <h2 class="h2_seccion">THE TOUR IN A NUTSHELL</h2>
     <p class="formated">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut natus corrupti sequi magnam quis laborum incidunt
       repudiandae, architecto exercitationem praesentium temporibus quam earum ad tempora repellat et iste? Ipsum,
       earum.
@@ -62,18 +96,20 @@
   </div>
 
 
-  <div class="">
-    <h1>08.12 / 7PM</h1>
-    <p class="formated">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum placeat nam nisi, error saepe laboriosam
-      consequuntur similique eum doloribus officia non in molestiae quibusdam porro magni quas doloremque provident
-      hic.
-    </p>
-    <hr style="border-color: black;">
+  <div class="" style="width: 50%;">
+      <div style="margin-top: 14vh;">
+        <h3 class="h3_seccion">08.12 / 7PM</h3>
+        <p class="formated">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum placeat nam nisi, error saepe laboriosam
+          consequuntur similique eum doloribus officia non in molestiae quibusdam porro magni quas doloremque provident
+          hic.
+        </p>
+        <hr style="border-color: black;">
 
-    <h1>09.15 / 8PM</h1>
-    <p class="formated">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ab sed, eligendi veritatis et rerum ipsa
-      numquam obcaecati quidem nisi nostrum dolorum est hic sunt quos. Aperiam, tempora. Sapiente, id?
-    </p>
+        <h3 class="h3_seccion">09.15 / 8PM</h3>
+        <p class="formated">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ab sed, eligendi veritatis et rerum ipsa
+          numquam obcaecati quidem nisi nostrum dolorum est hic sunt quos. Aperiam, tempora. Sapiente, id?
+        </p>
+      </div>
   </div>
 </div>
 
@@ -97,33 +133,70 @@
       <!-- Contenedor para las dos primeras imágenes en una columna -->
       <div class="column">
         <div class="card">
-          <img src="img/Place Your Image Here.png 2.png" alt="Artist 1">
-          <h1>THE ROOKIES</h1>
-          <p>A Whole New Music Experience</p>
+          <img src="img/Place Your Image Here.png 2.png" alt="Artist 1" style="width: 250px; height: 250px">
+          <div style="display: flex; justify-content: space-between;">
+            <div style="text-align: left;">
+              <h4 class="green-title" style="margin-bottom: 0px; margin-top: 10px;">THE ROOKIES</h4>
+              <p class="green-title" style="font-size: 0.6rem;">A Whole New Music Experience</p>
+            </div>
+            <div style="display: flex; flex-direction: column; font-size: 0.6rem; margin: auto 0; text-align: right;">
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+            </div>
+          </div>
         </div>
-
+      
         <div class="card">
-          <img src="img/Place Your Image Here.png3.png" alt="Artist 2">
-          <h1>THE ROOKIES</h1>
-          <p>A Whole New Music Experience</p>
+          <img src="img/Place Your Image Here.png 2.png" alt="Artist 1" style="width: 250px; height: 250px;">
+          <div style="display: flex; justify-content: space-between;">
+            <div style="text-align: left;">
+              <h4 class="green-title" style="margin-bottom: 0px; margin-top: 10px;">THE ROOKIES</h4>
+              <p class="green-title" style="font-size: 0.6rem;">A Whole New Music Experience</p>
+            </div>
+            <div style="display: flex; flex-direction: column; font-size: 0.6rem; margin: auto 0; text-align: right;">
+            <p style="margin: 0px;">Sun May 03|7:00PM</p>
+            <p style="margin: 0px;">Sun May 03|7:00PM</p>
+            <p style="margin: 0px;">Sun May 03|7:00PM</p>
+            </div>
+          </div>
         </div>
       </div>
-
+      
       <!-- Contenedor para las otras dos imágenes en otra columna -->
       <div class="column">
         <div class="card">
-          <img src="img/Place Your Image Herepng4.png" alt="Artist 3">
-          <h1>THE ROOKIES</h1>
-          <p>A Whole New Music Experience</p>
+          <img src="img/Place Your Image Here.png 2.png" alt="Artist 1" style="width: 250px; height: 250px;">
+          <div style="display: flex; justify-content: space-between;">
+            <div style="text-align: left;">
+              <h4 class="green-title" style="margin-bottom: 0px; margin-top: 10px;">THE ROOKIES</h4>
+              <p class="green-title" style="font-size: 0.6rem;">A Whole New Music Experience</p>
+            </div>
+            <div style="display: flex; flex-direction: column; font-size: 0.6rem; margin: auto 0; text-align: right;">
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+            </div>
+          </div>
         </div>
-
+      
         <div class="card">
-          <img src="img/Place Your Image Here png5.png" alt="Artist 4">
-          <h1>THE ROOKIES</h1>
-          <p>A Whole New Music Experience</p>
+          <img src="img/Place Your Image Here.png 2.png" alt="Artist 1" style="width: 250px; height: 250px;">
+          <div style="display: flex; justify-content: space-between;">
+            <div style="text-align: left;">
+              <h4 class="green-title" style="margin-bottom: 0px; margin-top: 10px;">THE ROOKIES</h4>
+              <p class="green-title" style="font-size: 0.6rem;">A Whole New Music Experience</p>
+            </div>
+            <div style="display: flex; flex-direction: column; font-size: 0.6rem; margin: auto 0; text-align: right;">
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+              <p style="margin: 0px;">Sun May 03|7:00PM</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      
 
     <!-- Estrella 2 en la parte superior derecha -->
     <div class="estrella2">
@@ -142,10 +215,7 @@
         <div class="buttons-container">
             <h1 class="title" style="color: #000000; font-size: 32px;"><img src="img/Shape-2.png">WHAT'S <br> NEW? <img src="img/Shape-2.png" alt=""></h1>
             <p style="color: black;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Quam repellat, provident, <br>
-                fugit error nesciunt fuga ex totam ducimus <br>
-                hic, quod accusantium facere consectetur. Id laboriosam dolore, cum eum aut distinctio.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe obcaecati vel recusandae optio asperiores totam laboriosam quasi dolorem consequatur? Esse repellendus delectus iste repudiandae doloribus aliquid incidunt officia placeat minima.
             </p>
             <button class="buy-tickets-btn">BUY TICKETS</button>
             <button class="learn-more-btn">LEARN MORE</button>
@@ -160,33 +230,25 @@
 
     <!--cuarta seccion-->
 
-    <section class="background-seccion4">
-      <div class="estrella">
-        <img src="estrella.png" alt="estrella-">
+    <section class="quinta-seccion">
+      <div class="container">
+        <div id="container1">
+    
+          <h2>Introducing: <br> Featured Artist</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae rerum impedit natus distinctio blanditiis
+            similique eveniet necessitatibus! Sequi quisquam reiciendis beatae, laborum explicabo impedit</p>
+          <button>Schedules</button>
+        </div>
+    
+        <div id="container2">
+          <img src="./img/Place Your Image Here (Double Click to Edit)12.png" alt="Imagen del artista">
+        </div>
+    
       </div>
-
-      <div>
-        <h1>
-          Introducing; Featured Artists
-        </h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum at repellat nostrum dolore ipsam beatae minus
-          vitae inventore, dolorum, nihil est molestias impedit quasi illum suscipit non, labore unde iste.
-        </p>
-
-        <div class="buton">
-          <button>SCHEDULES</button>
-        </div>
-
-        <div class="estrella">
-          <img src="Shape estrellita.png" alt="estrellita.">
-          <p>08.12</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-          <img src="Shape estrellita.png" alt="estrellita.">
-          <img src="img/Place Your Image Here png7.png" alt="">
-        </div>
-        <img src="estrella.png" alt="">
+      <div class="content">
+    
+        <h1>08.12</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, magni.</p>
       </div>
     </section>
 
@@ -236,14 +298,9 @@
   </section>
 
     <section class="background-seccion6">
-      <div class="stars-container">
-        <img src="img/estrella2.png" alt="Estrella 2">
-        <div class="estrella1">
-          <img src="img/estrella.png" alt="Estrella 1">
-        </div>
-    
+
         <div>
-          <h1>Shop Our Merch</h1>
+          <h1 style="color: #4bd867">Shop Our Merch</h1>
           <br>tenetur vero soluta perferendis earum debitis dolor?
           Itaque delectus soluta doloribus aliquid inventore ad
           <br>quibusdam consequatur distinctio?
@@ -304,41 +361,32 @@
       </div>
     </section>
 
-    <footer class="background-seccion7">
-      <div class="container">
-          <div class="secciones">
-              <div class="seccion">
-                  <h3>THE COMPANY</h3>
-                  <ul>
-                      <li><a href="#">Nuestra historia</a></li>
-                      <li><a href="#">Misión y visión</a></li>
-                      <li><a href="#">Equipo</a></li>
-                      <li><a href="#">Contacto</a></li>
-                  </ul>
-              </div>
-              <div class="seccion">
-                  <h3>OUR ARTISTS</h3>
-                  <ul>
-                      <li><a href="#">Artistas A-Z</a></li>
-                      <li><a href="#">Géneros musicales</a></li>
-                      <li><a href="#">Próximos eventos</a></li>
-                      <li><a href="#">Encontrar un artista</a></li>
-                  </ul>
-              </div>
-              <div class="seccion">
-                  <h3>LEGAL</h3>
-                  <ul>
-                      <li><a href="#">Política de privacidad</a></li>
-                      <li><a href="#">Términos y condiciones</a></li>
-                      <li><a href="#">Política de cookies</a></li>
-                      <li><a href="#">Derechos de autor</a></li>
-                  </ul>
-              </div>
+    <footer>
+      <div class="footer-container">
+          <div class="footer-column">
+              <h2 class="titulo-h2">The Company</h2>
+              <ul class="listado">
+                  <li>Our Live Concerts</li>
+                  <li>Virtual Concerts</li>
+                  <li>What We Do</li>
+                  <li>Merchandise Shop</li>
+              </ul>
           </div>
-          <div class="copyright">
-              <p>COPYRIGHT 2024 ALL RIGHTS RESERVED.</p>
+          <div class="footer-column">
+              <h2 class="titulo-h2">Our Artists</h2>
+              <p style="color: #000000;">The Black Punk</p>
+              <p style="color: #000000;">Rock of Era Band</p>
+              <p style="color: #000000;">Rock of East</p>
+          </div>
+          <div class="footer-column">
+              <h2 class="titulo-h2">Legal</h2>
+              <ul class="listado">
+                  <li>Privacy Policy</li>
+                  <li>Terms and Conditions</li>
+              </ul>
           </div>
       </div>
+      <p class="link" style="color: #000000;">COPYRIGHT 2021 ALL RIGHTS RESERVED</p>
     </footer>
     
 
